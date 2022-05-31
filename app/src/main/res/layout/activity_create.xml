@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFC"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:text="Create Account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:textColor="#012F49"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_oval"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_username" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_oval"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_oval"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_below="@+id/layout3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_oval"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_below="@+id/layout4"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="170dp"
+            android:background="@drawable/rectangle_oval"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/ic_semester"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Spinner
+                android:id="@+id/semester"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="170dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectangle_oval"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/ic_branch"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Spinner
+                android:id="@+id/branch"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_below="@+id/layout5"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_oval"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_roll_no" />
+
+        <EditText
+            android:id="@+id/roll_no"
+            android:layout_width="213dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reg"
+        android:text="Register"
+        android:textColor="@color/lighter_shade"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        app:backgroundTint="#034D77"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
